@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #F3F5FC;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    margin-bottom: -77px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 5vw;
+}
+
+
+textarea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    border-color: #f2f2f5;
+    background-color: #F3F5FC;
+    min-height: 48vh;
+    color: #0A3871;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-top: -100px;
+}
+
+.ct-flex-none {
+    display: none;
+} 
+
+.ct-flex-flex {
+    display: flex;
+} 
+
+.ct-flex-between {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.ct-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    width: 90%;
+    height: 85vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.ct-text-danger{
+    color: red;
+}
+
+.ct-text-success{
+    color: rgb(2, 140, 0);
+}
+
+.ct-align-start{
+    display: flex;
+    width: 100%;
+    text-align: start;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.ct-cricle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    padding: 1px 7px;
+}
+
+.ct-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.ct-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.ct-btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.ct-btn-blue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #0A3871;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.ct-btn-alter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #ffffff;
+    width: 100%;
+    color: rgb(55, 55, 55);
+    padding: 20px;
+    border: 1px solid #0A3871;
+    border-radius: 50px;
+}
+
+.ct-btn-success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #22a608fc;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ct-btn-simple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.16);
+    background: #22a60800;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

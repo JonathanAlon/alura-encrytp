@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.PNG">
+    <link rel="stylesheet" href="main.css">
+    <title>ebncrypted</title>
+</head>
+<body>
+    <nav>
+        <img src="img/logo.PNG" width="50" alt="alura-logo">
+    </nav>
+
+    <main class="ct-flex-flex" id="inputTextValue">
+        <form name="formValue" id="formValue">
+            <section class="ct-input-container">
+                <textarea name="textValue" id="textValue" cols="30" rows="12" placeholder="Click here to enter a text..."></textarea>
+                <small class="ct-text-danger" id="alert_message"></small>
+            </section>
+            <small class="ct-align-start"><span class="ct-cricle-icon">!</span>Only lowercase letters without accents</small>
+            <section class="ct-btn-container">
+                <button class="ct-btn-blue" type="submit" onClick="actionValue(true)">Encrypt</button>
+                <button class="ct-btn-alter" type="submit" onClick="actionValue(false)">Decrypt</button>
+            </section>
+        </form>
+    </main>
+
+    <main class="ct-flex-none" id="outputTextValue">
+        <section class="ct-flex-between">
+            <small>Output</small>
+            <article class="ct-btn-group">
+                <button class="ct-btn-simple" onClick="goBack()">Back</button>
+                <button class="ct-btn-success" onClick="copyToClipboard()">Copy</button>
+            </article>
+        </section>
+        <small class="ct-text-success" id="copied_message"></small>
+        <section class="ct-card">
+            <textarea name="outputValue" id="outputValue" cols="30" rows="10" value="`${}`" readonly></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <small>By Jonathan Alonzo Ojeda Kumul - Mexico/Yucatan 🚩</small>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
