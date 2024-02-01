@@ -1,3 +1,4 @@
+@import 'queries.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 * {
@@ -46,6 +47,26 @@ textarea {
     font-weight: bold;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+figcaption small {
+    font-size: 20px;
+}
+
 main form {
     display: flex;
     flex-wrap: wrap;
@@ -59,15 +80,34 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
-.ct-flex-none {
-    display: none;
-} 
+ul {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+.ct-desktop-none {
+    display: none !important;
+}
+
+.ct-desktop-flex {
+    display: flex !important;
+}
+
+.ct-mq-desktop {
+    display: none !important;
+}
 
 .ct-flex-flex {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 } 
 
 .ct-flex-between {
@@ -92,6 +132,10 @@ footer {
 
 .ct-text-danger{
     color: red;
+}
+
+.ct-flex-none {
+    display: none;
 }
 
 .ct-text-success{
@@ -155,6 +199,7 @@ footer {
     color: white;
     padding: 20px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .ct-btn-alter{
@@ -168,6 +213,7 @@ footer {
     padding: 20px;
     border: 1px solid #0A3871;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .ct-btn-success{
@@ -191,4 +237,23 @@ footer {
     padding: 8px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.ct-rules-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 35vw;
+    padding: 30px 0px;
+    color: white;
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.ct-rules-container > ul {
+    color: white;
 }

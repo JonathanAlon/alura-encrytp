@@ -7,38 +7,56 @@
     <link rel="stylesheet" href="main.css">
     <title>ebncrypted</title>
 </head>
-<body>
+<body onload="checkInput();">
     <nav>
         <img src="img/logo.PNG" width="50" alt="alura-logo">
     </nav>
 
-    <main class="ct-flex-flex" id="inputTextValue">
-        <form name="formValue" id="formValue">
-            <section class="ct-input-container">
-                <textarea name="textValue" id="textValue" cols="30" rows="12" placeholder="Click here to enter a text..."></textarea>
-                <small class="ct-text-danger" id="alert_message"></small>
+    <main class="ct-container">
+        <article class="ct-flex-flex" id="inputTextValue">
+            <form name="formValue" id="formValue">
+                <section class="ct-input-container">
+                    <textarea name="textValue" id="textValue" cols="30" rows="12" placeholder="Click here to enter a text..."></textarea>
+                    <small class="ct-text-danger" id="alert_message"></small>
+                </section>
+                <small class="ct-align-start"><span class="ct-cricle-icon">!</span>Only lowercase letters without accents</small>
+                <section class="ct-btn-container">
+                    <button class="ct-btn-blue" type="submit" onClick="filterAlpha(true)">Encrypt</button>
+                    <button class="ct-btn-alter" type="submit" onClick="filterAlpha(false)">Decrypt</button>
+                </section>
+            </form>
+        </article>
+    
+        <article class="ct-flex-none ct-desktop-none" id="outputTextValue">
+            <section class="ct-flex-between">
+                <small>Output</small>
+                <article class="ct-btn-group">
+                    <button class="ct-btn-simple ct-mq-mobile" onClick="goBack()">Back</button>
+                    <button class="ct-btn-simple ct-mq-desktop" onClick="newCode()">Clear output</button>
+                    <button class="ct-btn-success" onClick="copyToClipboard()">Copy</button>
+                </article>
             </section>
-            <small class="ct-align-start"><span class="ct-cricle-icon">!</span>Only lowercase letters without accents</small>
-            <section class="ct-btn-container">
-                <button class="ct-btn-blue" type="submit" onClick="actionValue(true)">Encrypt</button>
-                <button class="ct-btn-alter" type="submit" onClick="actionValue(false)">Decrypt</button>
+            <small class="ct-text-success" id="copied_message"></small>
+            <section class="ct-card">
+                <figure id="imgNoText">
+                    <img src="img/no-text.png" width="280" alt="">
+                    <figcaption>
+                        <h2>No message was found</h2>
+                        <p>Enter the text you want to encrypt or decrypt.</p>
+                        <article class="ct-rules-container">
+                            <small>How to use this app 🤔</small>
+                            <ul>
+                                <li>You must enter a text</li>
+                                <li>You must enter a text without special characters</li>
+                            </ul>
+                        </article>
+                    </figcaption>
+                </figure>
+                <textarea name="outputValue" id="outputValue" cols="30" rows="10" value="`${}`" readonly></textarea>
             </section>
-        </form>
+        </article>
     </main>
 
-    <main class="ct-flex-none" id="outputTextValue">
-        <section class="ct-flex-between">
-            <small>Output</small>
-            <article class="ct-btn-group">
-                <button class="ct-btn-simple" onClick="goBack()">Back</button>
-                <button class="ct-btn-success" onClick="copyToClipboard()">Copy</button>
-            </article>
-        </section>
-        <small class="ct-text-success" id="copied_message"></small>
-        <section class="ct-card">
-            <textarea name="outputValue" id="outputValue" cols="30" rows="10" value="`${}`" readonly></textarea>
-        </section>
-    </main>
 
     <footer>
         <small>By Jonathan Alonzo Ojeda Kumul - Mexico/Yucatan 🚩</small>

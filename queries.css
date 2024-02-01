@@ -1,0 +1,42 @@
+@media (min-width: 900px) {
+
+    main {
+        margin: 0vh 5vw 10vh 5vw !important;
+    }
+
+    textarea {
+        width: 98% !important;
+    }
+
+    .ct-container {
+        display: flex !important;
+        flex-direction: row;
+        gap: 100px !important;
+    }
+
+    .ct-btn-group {
+        display: flex !important;
+        flex-direction: row;
+        gap: 10px !important;
+    }
+
+    .ct-btn-container {
+        flex-direction: row !important;
+    }
+
+    .ct-flex-none, .ct-flex-flex {
+        display: flex !important;
+        width: 50% !important;
+        flex-direction: column !important;
+    }
+
+    .ct-mq-mobile {
+        display: none !important;
+    }
+
+    .ct-mq-desktop {
+        display: flex !important;
+    }
+}
+
+  
